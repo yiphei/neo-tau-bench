@@ -48,11 +48,11 @@ The business logic of some tools were either corrected or improved. For instance
 
 ### User LLM-strategy system prompt
 
-One of the biggest problems I encoureted with the AI-simulated user was premature conversation termination via `'###STOP###'`. Often, the conversation was not over, but the user hallucinated and terminated it. Therefore, the system prompt was improved to reduce these incidents. Better formatting was also applied.
+One of the biggest problems I encoureted with the AI-simulated user was premature conversation termination via `'###STOP###'`. Often, the conversation was not over, but the AI user hallucinated and terminated it. Therefore, the system prompt was improved to reduce these incidents. Better formatting was also applied.
 
 ### Policy (wiki.md)
 
-The change flights and cabin sections of the policy are confusing because it first states that basic economy flights cannot be modified, but it then separately states that basic economy flights can upgrade cabin. Once upgraded, they could be changed like any other flight. Since cabin changes are instrinsically part of flight changes (both conceptually and at the tool API level), the two sections were merged into one and the overall exposition was improved for clarity.
+In the airline policy wiki, the change flights and cabin sections are confusing because it first states that basic economy flights cannot be modified, but it then separately states that basic economy flights can upgrade cabin. Once upgraded, they could be changed like any other flight. Since cabin changes are instrinsically part of flight changes (both conceptually and at the tool API level), the two sections were merged into one and the overall exposition was improved for clarity.
 
 ## Citation
 
