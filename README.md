@@ -42,21 +42,21 @@ A new `SortFlights` tool was added. Many test cases required the AI agent to sor
 
 ### Tool API and business logic
 
-The business logic of some tools were either corrected or improved. For instance, the original `UpdateReservationBaggages` tool expected a `payment_id` even when there were zero nonfree baggages and thus no payment was expected. This created ambiguity for what `payment_id` to use. Therefore, `UpdateReservationBaggages` was updated to expect a null `payment_id` when there are zero nonfree baggages.
+The business logic of some tools were either corrected or improved. For instance, the original `UpdateReservationBaggages` tool expected a `payment_id` even when there were zero nonfree baggages, and thus no payment was expected. This created ambiguity for what `payment_id` to use. Therefore, `UpdateReservationBaggages` was updated to expect a null `payment_id` when there are zero nonfree baggages.
 
 ## System prompts
 
 ### User LLM-strategy system prompt
 
-One of the biggest problems I encoureted with the AI-simulated user was premature conversation termination via `'###STOP###'`. Often, the conversation was not over, but the AI user hallucinated and terminated it. Therefore, the system prompt was improved to reduce these incidents. Better formatting was also applied.
+One of the biggest problems I encountered with the AI-simulated user was premature conversation termination via `'###STOP###'`. Often, the conversation was not over, but the AI user hallucinated and terminated it. Therefore, the system prompt was improved to reduce these incidents. Better formatting was also applied.
 
 ### Policy (wiki.md)
 
-In the airline policy wiki, the change flights and cabin sections are confusing because it first states that basic economy flights cannot be modified, but it then separately states that basic economy flights can upgrade cabin. Once upgraded, they could be changed like any other flight. Since cabin changes are instrinsically part of flight changes (both conceptually and at the tool API level), the two sections were merged into one and the overall exposition was improved for clarity.
+In the airline policy wiki, the change flights and cabin sections are confusing because it first states that basic economy flights cannot be modified, but it then separately states that basic economy flights can upgrade cabin. Once upgraded, they could be changed like any other flight. Since cabin changes are intrinsically part of flight changes (both conceptually and at the tool API level), the two sections were merged into one and the overall exposition was improved for clarity.
 
 ## Citation
 
-If you use this codebase, or otherwise found my work valuable, please cite:
+If you use this codebase or found my work valuable, please cite:
 
 ```
 @misc{yan2025neotau,
