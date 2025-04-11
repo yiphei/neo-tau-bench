@@ -19,11 +19,11 @@ Here are the test results between the two test corpi
 | revised_test      | **0.52**     | **0.36**     | **0.27**     | **0.22**     |
 | test     | 0.35     | 0.22     | 0.15     | 0.11    |
 
-The command used for `revised_test` was the below and the results are uploaded to [neo-revised-test-airline.json](historical_trajectories/neo-revised-test-airline.json)
+The command used for `revised_test` is the below and the results are uploaded to [neo-revised-test-airline.json](historical_trajectories/neo-revised-test-airline.json)
 ```
 python run.py --agent-strategy tool-calling --env airline --model openrouter/anthropic/claude-3.7-sonnet --model-provider openrouter --user-model openrouter/anthropic/claude-3.7-sonnet --user-model-provider openrouter --user-strategy llm --max-concurrency 33 --task-split revised_test --num-trials 4
 ```
-and the command used for `test` was the below and the results are uploaded to [neo-test-airline.json](historical_trajectories/neo-test-airline.json)
+and the command used for `test` is the below and the results are uploaded to [neo-test-airline.json](historical_trajectories/neo-test-airline.json)
 ```
 python run.py --agent-strategy tool-calling --env airline --model openrouter/anthropic/claude-3.7-sonnet --model-provider openrouter --user-model openrouter/anthropic/claude-3.7-sonnet --user-model-provider openrouter --user-strategy llm --max-concurrency 33 --task-split test --num-trials 4 --task-ids 0 3 6 11 20 23 32 1 10 25 4 12 14 15 17 21 22 41 42 43 47 48 49 19 18 26 27
 ```
