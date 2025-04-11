@@ -1,6 +1,6 @@
 # neo-**τ-bench**
 
-neo-τ-bench is an fork of [tau-bench](https://github.com/sierra-research/tau-bench) that improves on the original benchmark in the following areas:
+neo-τ-bench is a fork of [tau-bench](https://github.com/sierra-research/tau-bench) that improves on the original benchmark in the following areas:
 
 - testing corpus
 - tools
