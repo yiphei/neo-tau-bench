@@ -28,7 +28,7 @@ and the command used for `test` is the below and the results are uploaded to [ne
 python run.py --agent-strategy tool-calling --env airline --model openrouter/anthropic/claude-3.7-sonnet --model-provider openrouter --user-model openrouter/anthropic/claude-3.7-sonnet --user-model-provider openrouter --user-strategy llm --max-concurrency 33 --task-split test --num-trials 4 --task-ids 0 3 6 11 20 23 32 1 10 25 4 12 14 15 17 21 22 41 42 43 47 48 49 19 18 26 27
 ```
 
-More tests from `test` will be converted into `revised_test` over time. You can find more information at https://github.com/yiphei/new-tau-bench/wiki/revised_tasks_test.py-changelog. 
+More tests from `test` will be converted into `revised_test` over time. You can find more information at https://github.com/yiphei/neo-tau-bench/wiki/revised_tasks_test.py-changelog-(airline-environment). 
 
 ## Tools
 
